@@ -12,12 +12,6 @@ O serviço AuthenticationService é responsável por obter a autenticação do u
 
 A classe ResourceController contém o endpoint "/home" que é acessível somente por usuários autenticados.
 
-Para usar o projeto, você precisa:
-
-Criar um arquivo application.properties na raiz do projeto com o seguinte conteúdo:
-
-spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration,org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration
-
 Executar o projeto usando o comando mvn spring-boot:run.
 
 Fazer uma solicitação GET para o endpoint "/home" passando o segredo da chave da API no cabeçalho "X-API-KEY". Por exemplo:
